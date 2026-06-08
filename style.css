@@ -520,3 +520,76 @@ ul.comic-list-numbered li {
     0%, 100% { transform: scale(1) rotate(0deg); }
     50%      { transform: scale(1.1) rotate(5deg); }
 }
+/* ==============================================================
+   TRAIT PERCENTAGE BARS
+   ============================================================== */
+.trait-breakdown-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border: 3px solid #1e293b;
+    border-radius: 12px;
+    box-shadow: 4px 4px 0px #1e293b;
+}
+
+.trait-breakdown-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+.trait-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.trait-label {
+    width: 20%;
+    color: #475569;
+}
+
+.trait-label.dominant {
+    color: #1e293b;
+    font-weight: 800;
+}
+
+.trait-bar-wrapper {
+    width: 55%;
+    height: 16px;
+    background-color: #e2e8f0;
+    border: 2px solid #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+/* Colors for the Left/Right sides of the bar */
+.bar-left {
+    height: 100%;
+    background-color: #38bdf8; /* Sky Blue */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.bar-right {
+    height: 100%;
+    background-color: #fb923c; /* Orange */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}

@@ -77,7 +77,7 @@ const careerDetailedReport = {
         strengths: ["Dependable & responsible under strict deadlines", "Systematic approach to logical data verification", "Exceptional focus on granular structural details"],
         challenges: ["Working within highly ambiguous instructions", "Presenting financial details storytelling-style to non-finance teams"],
         skills: ["Advanced Excel & Power BI", "Financial Statement Analysis", "Internal Controls & Risk Audit Frameworks"],
-        certifications: ["ACCA (Association of Chartered Certified Accountants)", "CPA Vietnam", "MOS Excel Foundation"],
+        certifications: ["ACCA (Association of Chartered Financial Accountants)", "CPA Vietnam", "MOS Excel Foundation"],
         roadmap: ["Years 1-2: Master accounting fundamentals & Excel metrics.", "Years 2-3: Complete foundational ACCA modules; network at career fairs.", "Years 3-4: Secure an Audit/Tax internship at a Big 4 or Mid-Tier firm."],
         employers: ["Big Four (Deloitte, EY, PwC, KPMG)", "Mid-Tier (Grant Thornton, Mazars, RSM)", "Corporate Finance Departments (Vinamilk, Masan, Vingroup)"]
     },
@@ -125,6 +125,15 @@ const careerDetailedReport = {
         certifications: ["Wealth Management Basics Tracks", "Customer Service Excellence Accreditations", "English Business Communications"],
         roadmap: ["Years 1-2: Improve presentation warmth and public speaking skills.", "Years 2-3: Volunteer for student hospitality or club partnership leads.", "Years 3-4: Intern in Retail Client relations, Onboarding, or Sales Supp."],
         employers: ["Commercial Bank Priority Lounges (Techcombank Priority, MB Private)", "Foreign Banks (HSBC, Standard Chartered)", "Fintech Client Success Divisions"]
+    },
+    "INFP": {
+        looksLike: "Developing personal finance modules, creating accessible budgeting tools, teaching financial literacy workshops, and managing ESG sustainability programs.",
+        strengths: ["Deep motivation to drive real-world socioeconomic value", "Empathetic, clear communication of complicated money topics", "Creative alternative program development"],
+        challenges: ["Coping with hyper-competitive corporate sales environments", "Making purely cut-throat financial decisions"],
+        skills: ["Curriculum & Educational Planning", "Financial Literacy Campaign Strategy", "Public Workshop Presentation"],
+        certifications: ["Personal Wealth Advisor Credentials", "ESG & Sustainability Impact Accreditations", "Content Presentation Mastery"],
+        roadmap: ["Years 1-2: Design simple budgeting infographics for student clubs.", "Years 2-3: Lead educational charity initiatives or run literacy webinars.", "Years 3-4: Intern at non-profit funds, personal apps, or corporate ESG desks."],
+        employers: ["Educational Apps (Simplize, Vietstock Media)", "Impact Desks (Fintech Literacy Frameworks, MoMo, Timo)", "Socioeconomic NGOs & Sustainable Micro-finance Desks"]
     },
     "INFP": {
         looksLike: "Developing personal finance modules, creating accessible budgeting tools, teaching financial literacy workshops, and managing ESG sustainability programs.",
@@ -359,7 +368,7 @@ function renderResults() {
 
     container.innerHTML = `
         <div class="results-page">
-            <img src="${assets.avatar}" alt="${type} Avatar" class="avatar-result-img" onerror="this.src='https://api.dicebear.com/7.x/fun-emoji/svg?seed=${type}'" />
+            <img src="${assets.avatar}" alt="${type} Avatar" class="avatar-result-img" onerror="this.src='https://api.api-ninjas.com/v1/randomimage?category=abstract'" />
             
             <p class="small-text">Wow! You are an</p>
             <h2 class="type-result">${type}</h2>
@@ -371,6 +380,8 @@ function renderResults() {
             <h2 class="career-result">${career}</h2>
             
             <p class="recommendation-text">${description}</p>
+            
+            ${calculatePercentages(totals)}
             
             <div class="comic-accordion">
                 
@@ -463,36 +474,34 @@ window.toggleAccordion = function(headerElement) {
         icon.innerText = "➖";
         headerElement.style.backgroundColor = "#ffedd5";
     }
-};
-// Add this inside the function where you display the final result!
-// Assuming you have variables tracking the scores like: scores.E, scores.I, etc.
+}
 
-function calculatePercentages() {
-    // Prevent dividing by zero just in case
-    const totalEI = (scores.E + scores.I) || 1;
-    const totalSN = (scores.S + scores.N) || 1;
-    const totalTF = (scores.T + scores.F) || 1;
-    const totalJP = (scores.J + scores.P) || 1;
+// 11. Core Mathematical Multi-Trait Percentage Matrix 
+function calculatePercentages(totals) {
+    // Dynamically calculate the maximum absolute score possible based on loaded data matrix queries
+    const countE = questions.filter(q => q.trait === "E").length || 5;
+    const countS = questions.filter(q => q.trait === "S").length || 5;
+    const countT = questions.filter(q => q.trait === "T").length || 5;
+    const countJ = questions.filter(q => q.trait === "J").length || 5;
 
-    // Calculate percentages
-    const pctE = Math.round((scores.E / totalEI) * 100);
+    // Linearly translate -Max to +Max range cleanly into 0% to 100% metrics
+    const pctE = Math.round(((totals.E + (countE * 2)) / (countE * 4)) * 100);
     const pctI = 100 - pctE;
 
-    const pctS = Math.round((scores.S / totalSN) * 100);
+    const pctS = Math.round(((totals.S + (countS * 2)) / (countS * 4)) * 100);
     const pctN = 100 - pctS;
 
-    const pctT = Math.round((scores.T / totalTF) * 100);
+    const pctT = Math.round(((totals.T + (countT * 2)) / (countT * 4)) * 100);
     const pctF = 100 - pctT;
 
-    const pctJ = Math.round((scores.J / totalJP) * 100);
+    const pctJ = Math.round(((totals.J + (countJ * 2)) / (countJ * 4)) * 100);
     const pctP = 100 - pctJ;
 
-    // Generate the HTML for the bars
-    const breakdownHTML = `
+    // Return layout content structure matching configured style classes
+    return `
         <div class="trait-breakdown-container">
             <h3 class="trait-breakdown-title">Your Trait Breakdown</h3>
             
-            <!-- Extraversion vs Introversion -->
             <div class="trait-row">
                 <div class="trait-label ${pctE >= 50 ? 'dominant' : ''}">Extravert (E)</div>
                 <div class="trait-bar-wrapper">
@@ -502,7 +511,6 @@ function calculatePercentages() {
                 <div class="trait-label ${pctI > 50 ? 'dominant' : ''}" style="text-align: right;">(I) Introvert</div>
             </div>
 
-            <!-- Sensing vs Intuition -->
             <div class="trait-row">
                 <div class="trait-label ${pctS >= 50 ? 'dominant' : ''}">Sensing (S)</div>
                 <div class="trait-bar-wrapper">
@@ -512,7 +520,6 @@ function calculatePercentages() {
                 <div class="trait-label ${pctN > 50 ? 'dominant' : ''}" style="text-align: right;">(N) Intuition</div>
             </div>
 
-            <!-- Thinking vs Feeling -->
             <div class="trait-row">
                 <div class="trait-label ${pctT >= 50 ? 'dominant' : ''}">Thinking (T)</div>
                 <div class="trait-bar-wrapper">
@@ -522,7 +529,6 @@ function calculatePercentages() {
                 <div class="trait-label ${pctF > 50 ? 'dominant' : ''}" style="text-align: right;">(F) Feeling</div>
             </div>
 
-            <!-- Judging vs Perceiving -->
             <div class="trait-row">
                 <div class="trait-label ${pctJ >= 50 ? 'dominant' : ''}">Judging (J)</div>
                 <div class="trait-bar-wrapper">
@@ -531,9 +537,6 @@ function calculatePercentages() {
                 </div>
                 <div class="trait-label ${pctP > 50 ? 'dominant' : ''}" style="text-align: right;">(P) Prospecting</div>
             </div>
-            
         </div>
     `;
-
-    return breakdownHTML;
 }

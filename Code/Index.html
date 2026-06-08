@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinGuide: Your Corporate Path & MBTI Type</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="full-screen-container">
+
+        <div id="welcome-screen" class="card-comic welcome-wide active">
+            
+            <div class="welcome-content-split">
+                
+                <div class="welcome-text-side">
+                    <h1 class="finguide-logo"><span class="fin">Fin</span><span class="guide">Guide</span></h1>
+                    <h2 class="finguide-tagline">Who are you in Fin?</h2>
+                    <p class="finguide-desc">A website that helps young Finance Majors decide their suitable career path</p>
+                    <button class="action-btn start-btn pulsing" id="start-btn">Discover Your Path 🚀</button>
+                    <div class="subtitle-text" style="margin-top: 15px;">Just be honest, no wrong answers! 😉</div>
+                </div>
+
+                <div class="welcome-graphic-side">
+                    <svg class="magnifier-animation" viewBox="0 0 350 450" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Floating Group -->
+                        <g class="anim-float">
+                            
+                            <!-- Handle Base -->
+                            <rect x="155" y="280" width="40" height="150" fill="#8ba1b5" />
+                            <!-- Handle Grip -->
+                            <rect x="145" y="360" width="60" height="30" rx="6" fill="#1e293b" />
+                            <rect x="150" y="390" width="50" height="60" rx="8" fill="#2d3f56" />
+
+                            <!-- Outer Glass Rim -->
+                            <circle cx="175" cy="165" r="150" fill="#a8b8d0" />
+                            <!-- Inner White Rim -->
+                            <circle cx="175" cy="165" r="125" fill="#ffffff" />
+
+                            <!-- 4 Quadrants inside the glass -->
+                            <clipPath id="inner-lens">
+                                <circle cx="175" cy="165" r="115" />
+                            </clipPath>
+
+                            <g clip-path="url(#inner-lens)">
+                                <!-- Top Left: Teal -->
+                                <rect x="0" y="0" width="175" height="165" fill="#4fd1c5" />
+                                <!-- Top Right: Green -->
+                                <rect x="175" y="0" width="175" height="165" fill="#a3e635" />
+                                <!-- Bottom Left: Orange -->
+                                <rect x="0" y="165" width="175" height="175" fill="#fb923c" />
+                                <!-- Bottom Right: Pink -->
+                                <rect x="175" y="165" width="175" height="175" fill="#fb7185" />
+                            </g>
+
+                            <!-- White Dividing Cross -->
+                            <rect x="170" y="50" width="10" height="230" fill="#ffffff" />
+                            <rect x="60" y="160" width="230" height="10" fill="#ffffff" />
+
+                            <!-- ==========================================
+                                FIXED ICONS (Positioning separated from Animation) 
+                                ========================================== -->
+                            
+                            <!-- Top Left: Puzzle Piece (Pulsing) -->
+                            <g transform="translate(115, 105)"> <!-- Position layer -->
+                                <g class="anim-pulse" style="transform-origin: 0px 0px;"> <!-- Animation layer -->
+                                    <path transform="translate(-25, -20)" d="M15,10 h10 v-5 a5,5 0 0,1 10,0 v5 h10 v10 a5,5 0 0,0 0,10 v10 h-10 a5,5 0 0,1 -10,0 h-10 v-10 a5,5 0 0,1 0,-10 z" fill="#ffffff" />
+                                </g>
+                            </g>
+
+                            <!-- Top Right: Desk & Clock (Bobbing) -->
+                            <g transform="translate(235, 105)">
+                                <g class="anim-float-subtle">
+                                    <g transform="translate(-22, -18)">
+                                        <circle cx="15" cy="10" r="6" fill="#ffffff" />
+                                        <path d="M5,35 v-15 q0,-5 5,-5 h10 q5,0 5,5 v15 h-20" fill="#ffffff" />
+                                        <rect x="0" y="32" width="30" height="4" fill="#ffffff" />
+                                        <circle cx="35" cy="8" r="8" fill="none" stroke="#ffffff" stroke-width="3" />
+                                        <path d="M35,8 l3,-3 M35,8 v-4" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                                    </g>
+                                </g>
+                            </g>
+
+                            <!-- Bottom Left: Gears (Spinning) -->
+                            <!-- Large Gear -->
+                            <g transform="translate(105, 215)">
+                                <g class="anim-spin" style="transform-origin: 0px 0px;">
+                                    <circle cx="0" cy="0" r="12" fill="none" stroke="#ffffff" stroke-width="6" stroke-dasharray="6 4" />
+                                    <circle cx="0" cy="0" r="8" fill="#ffffff" />
+                                    <circle cx="0" cy="0" r="3" fill="#fb923c" />
+                                </g>
+                            </g>
+                            <!-- Small Gear -->
+                            <g transform="translate(128, 230)">
+                                <g class="anim-spin-reverse" style="transform-origin: 0px 0px;">
+                                    <circle cx="0" cy="0" r="8" fill="none" stroke="#ffffff" stroke-width="4" stroke-dasharray="4 3" />
+                                    <circle cx="0" cy="0" r="5" fill="#ffffff" />
+                                    <circle cx="0" cy="0" r="2" fill="#fb923c" />
+                                </g>
+                            </g>
+
+                            <!-- Bottom Right: Sprout Hand (Growing) -->
+                            <g transform="translate(235, 230)">
+                                <g class="anim-grow" style="transform-origin: 0px 0px;">
+                                    <g transform="translate(-17, -15)">
+                                        <path d="M0,15 q10,-5 20,0 l10,-5 a5,5 0 0,1 5,5 l-15,10 h-20 z" fill="#ffffff" />
+                                        <path d="M15,10 q0,-10 10,-10 q0,10 -10,10" fill="#ffffff" />
+                                    </g>
+                                </g>
+                            </g>
+
+                        </g>
+                    </svg>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="card-comic display-none">
+            <div id="quiz-container">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

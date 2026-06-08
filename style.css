@@ -520,76 +520,88 @@ ul.comic-list-numbered li {
     0%, 100% { transform: scale(1) rotate(0deg); }
     50%      { transform: scale(1.1) rotate(5deg); }
 }
-/* ==============================================================
-   TRAIT PERCENTAGE BARS
-   ============================================================== */
+/* ==========================================
+   TRAIT BREAKDOWN BAR STYLES (UPGRADED BIG & CHUNKY)
+   ========================================== */
 .trait-breakdown-container {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f8fafc;
-    border: 3px solid #1e293b;
-    border-radius: 12px;
-    box-shadow: 4px 4px 0px #1e293b;
+    margin: 35px auto 20px auto;
+    padding: 25px;
+    background: #f8fafc;
+    border: 3px solid #000000;
+    border-radius: 18px;
+    box-shadow: 5px 5px 0px #000000;
+    width: 100%;             /* Forces the container to expand fully inside the card */
+    max-width: 640px;        /* Sets a healthy, wide boundary for the rows */
+    box-sizing: border-box;
 }
 
 .trait-breakdown-title {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #1e293b;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .trait-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
-    font-weight: 600;
-    font-size: 14px;
+    margin-bottom: 22px;
+    width: 100%;             /* Ensures every row stretches from edge to edge */
+    gap: 16px;
+}
+
+.trait-row:last-child {
+    margin-bottom: 0;
 }
 
 .trait-label {
-    width: 20%;
-    color: #475569;
+    width: 130px;            /* Slightly widened so long words don't wrap weirdly */
+    font-size: 15px;
+    font-weight: 700;
+    color: #64748b;
 }
 
+/* Bold styling for the trait score that is dominant */
 .trait-label.dominant {
-    color: #1e293b;
-    font-weight: 800;
+    color: #000000;
+    font-weight: 900;
 }
 
+/* --- THE BIG BAR RENEWAL --- */
 .trait-bar-wrapper {
-    width: 55%;
-    height: 16px;
+    flex: 1;                 /* This now aggressively claims all that wide middle space */
+    display: flex;
+    height: 38px;            /* Taller and much chunkier (Up from 28px!) */
     background-color: #e2e8f0;
-    border: 2px solid #1e293b;
-    border-radius: 8px;
+    border: 3px solid #000000; /* Thicker, cleaner comic-style borders */
+    border-radius: 10px;
     overflow: hidden;
-    position: relative;
-    display: flex;
 }
 
-/* Colors for the Left/Right sides of the bar */
+/* Individual left/right split bars */
+.bar-left, .bar-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;         /* Larger font size so percentages are highly readable */
+    font-weight: 800;         /* Thick, punchy font weight */
+    color: #ffffff;
+    text-shadow: 1.5px 1.5px 0px #000000; /* Sharp comic book drop shadow for the text */
+    transition: width 0.4s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Left-side traits (E, S, T, J) - Comic Blue */
 .bar-left {
-    height: 100%;
-    background-color: #38bdf8; /* Sky Blue */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 5px;
-    color: white;
-    font-size: 10px;
-    font-weight: bold;
+    background-color: #3b82f6;
+    border-right: 2px solid #000000;
 }
 
+/* Right-side traits (I, N, F, P) - Comic Pink */
 .bar-right {
-    height: 100%;
-    background-color: #fb923c; /* Orange */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 5px;
-    color: white;
-    font-size: 10px;
-    font-weight: bold;
+    background-color: #ec4899;
 }

@@ -464,3 +464,76 @@ window.toggleAccordion = function(headerElement) {
         headerElement.style.backgroundColor = "#ffedd5";
     }
 };
+// Add this inside the function where you display the final result!
+// Assuming you have variables tracking the scores like: scores.E, scores.I, etc.
+
+function calculatePercentages() {
+    // Prevent dividing by zero just in case
+    const totalEI = (scores.E + scores.I) || 1;
+    const totalSN = (scores.S + scores.N) || 1;
+    const totalTF = (scores.T + scores.F) || 1;
+    const totalJP = (scores.J + scores.P) || 1;
+
+    // Calculate percentages
+    const pctE = Math.round((scores.E / totalEI) * 100);
+    const pctI = 100 - pctE;
+
+    const pctS = Math.round((scores.S / totalSN) * 100);
+    const pctN = 100 - pctS;
+
+    const pctT = Math.round((scores.T / totalTF) * 100);
+    const pctF = 100 - pctT;
+
+    const pctJ = Math.round((scores.J / totalJP) * 100);
+    const pctP = 100 - pctJ;
+
+    // Generate the HTML for the bars
+    const breakdownHTML = `
+        <div class="trait-breakdown-container">
+            <h3 class="trait-breakdown-title">Your Trait Breakdown</h3>
+            
+            <!-- Extraversion vs Introversion -->
+            <div class="trait-row">
+                <div class="trait-label ${pctE >= 50 ? 'dominant' : ''}">Extravert (E)</div>
+                <div class="trait-bar-wrapper">
+                    <div class="bar-left" style="width: ${pctE}%">${pctE}%</div>
+                    <div class="bar-right" style="width: ${pctI}%">${pctI}%</div>
+                </div>
+                <div class="trait-label ${pctI > 50 ? 'dominant' : ''}" style="text-align: right;">(I) Introvert</div>
+            </div>
+
+            <!-- Sensing vs Intuition -->
+            <div class="trait-row">
+                <div class="trait-label ${pctS >= 50 ? 'dominant' : ''}">Sensing (S)</div>
+                <div class="trait-bar-wrapper">
+                    <div class="bar-left" style="width: ${pctS}%">${pctS}%</div>
+                    <div class="bar-right" style="width: ${pctN}%">${pctN}%</div>
+                </div>
+                <div class="trait-label ${pctN > 50 ? 'dominant' : ''}" style="text-align: right;">(N) Intuition</div>
+            </div>
+
+            <!-- Thinking vs Feeling -->
+            <div class="trait-row">
+                <div class="trait-label ${pctT >= 50 ? 'dominant' : ''}">Thinking (T)</div>
+                <div class="trait-bar-wrapper">
+                    <div class="bar-left" style="width: ${pctT}%">${pctT}%</div>
+                    <div class="bar-right" style="width: ${pctF}%">${pctF}%</div>
+                </div>
+                <div class="trait-label ${pctF > 50 ? 'dominant' : ''}" style="text-align: right;">(F) Feeling</div>
+            </div>
+
+            <!-- Judging vs Perceiving -->
+            <div class="trait-row">
+                <div class="trait-label ${pctJ >= 50 ? 'dominant' : ''}">Judging (J)</div>
+                <div class="trait-bar-wrapper">
+                    <div class="bar-left" style="width: ${pctJ}%">${pctJ}%</div>
+                    <div class="bar-right" style="width: ${pctP}%">${pctP}%</div>
+                </div>
+                <div class="trait-label ${pctP > 50 ? 'dominant' : ''}" style="text-align: right;">(P) Prospecting</div>
+            </div>
+            
+        </div>
+    `;
+
+    return breakdownHTML;
+}

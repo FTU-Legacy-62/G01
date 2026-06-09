@@ -10,11 +10,11 @@ G01
 
 | Trịnh Minh Đức | 2312380007 | Coder & Leader |
 
-| Thành viên 2 |  |  |
+| Nguyễn Hoàng Thu Thảo | 2312380035 | Career Research & Quanlitative Benchmarking |
 
-| Thành viên 3 |  |  |
+| Nguyễn Anh Khoa | 2312380013 | MBTI Logic & Recommendation System |
 
-| Thành viên 4 |  |  |
+| Lê Minh Đăng | 2312380809 | MBTI Logic & Recommendation System |
 
 ## Overview
 

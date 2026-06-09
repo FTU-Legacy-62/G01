@@ -6,77 +6,63 @@ FinGuide
 
 G01
 
-## Thành viên
+## Members
 
-| Họ tên | Mã sinh viên | Vai trò chính |
-|---|---|---|
-| trịnh Minh Đức |  |  |
+| Trịnh Minh Đức | 2312380007 | Coder & Leader |
+
 | Thành viên 2 |  |  |
+
 | Thành viên 3 |  |  |
+
 | Thành viên 4 |  |  |
 
-## Mô tả ngắn về sản phẩm
+## Overview
 
-Viết ngắn gọn sản phẩm là gì và dùng để làm gì.
+A multiple choice website that determines the user’s personality traits, find what they accelerate in and match that personality type with a career path. Based on the foundation of MBTI, we aim to reach out to as many Finance majors through familiarity and quirky feel. With the recommendation will include links or referal to financial education center, like SAPP or SmartTrain, as a means to fund the project. 
 
-Nên viết khoảng 3 đến 6 câu.
+## Problem statement
 
-## Vấn đề sản phẩm giải quyết
+University students majoring in or interested in Finance have little to no knowledge about career opportunities in Finance, difficulty in finding information and what suits them.
 
-Sản phẩm giải quyết vấn đề gì?
+Financial education center have difficulties connect with people with no experience or knowledge about Finance, Banking, Auditing
 
-Ai đang gặp vấn đề này?
+Feeling lost or uncertain about choosing an academic major, their first job or planning a long-term study roadmap students are major concerns for university freshers
 
-Vì sao vấn đề này đáng quan tâm?
+## Target users
 
-## Người dùng mục tiêu
+University freshers interested in Finance
 
-Người dùng chính của sản phẩm là ai?
 
-Họ dùng sản phẩm trong tình huống nào?
+## When will they use FinGuide:
 
-## Tính năng chính
+When feeling lost or uncertain about choosing an academic major or their first job.
 
-- Tính năng 1.
-- Tính năng 2.
-- Tính năng 3.
+When planning a long-term study roadmap (deciding which professional certification to pursue).
 
-## Cách mở hoặc chạy sản phẩm
+During career orientation events, industry workshops, or job fairs hosted by SAPP Academy or universities.
 
-Ghi các bước để người khác có thể mở, chạy hoặc xem sản phẩm.
 
-Trong buổi thi cuối kỳ, nhóm sẽ demo sản phẩm trực tiếp từ repo này. Vì vậy, phần hướng dẫn cần đủ rõ để giảng viên có thể mở repo, đọc hướng dẫn và xem hoặc chạy demo.
+## Main features
 
-Sản phẩm được coi là có thể demo khi người khác có thể mở, chạy, xem hoặc thao tác với sản phẩm theo hướng dẫn trong file này.
+Finance-Context MBTI Assessment: A targeted 20-question situational quiz tailored specifically to finance and accounting scenarios to evaluate core behavioral traits.
 
-Ví dụ:
+Logical Career Mapping: A logic-driven matrix that accurately aligns the 16 standard MBTI personality types with specific, real-world finance career paths (e.g., INTJ to Investment Research).
 
-```text
-1. Mở link demo.
-2. Chọn chức năng cần xem.
-3. Thực hiện các bước demo.
-4. Xem kết quả.
-```
+Actionable Educational Roadmaps: A structured 4-year career milestone timeline integrated with direct hyperlinks to relevant professional certification tracks (such as ACCA, CFA, or CMA).
 
-Nếu cần cài đặt, ghi rõ công cụ cần có và lệnh cần chạy.
+Comprehensive Profile Analytics: Expandable accordion panels delivering deep-dive insights into a realistic "day-in-the-life" job description, core workplace strengths, and professional development challenges.
+
+## Step by step guide
+
+1. Open link https://ftu-legacy-62.github.io/G01/ 
+
+2. Press start
+
+3. Answer the 20 questions truthfully
+
+4. View results
 
 ## Link demo nếu có
 
-- Link demo: Chưa cập nhật
-- Tài khoản demo nếu có: Chưa cập nhật
+- Link demo: https://ftu-legacy-62.github.io/G01/
 
-Không ghi mật khẩu thật, token thật hoặc thông tin riêng tư lên GitHub.
-
-## Ghi chú về dữ liệu nếu có
-
-Nếu sản phẩm có dùng dữ liệu, ghi rõ dữ liệu đó là dữ liệu công khai, dữ liệu giả lập, dữ liệu tự tạo hay dữ liệu lấy từ nguồn khác.
-
-Nếu dữ liệu lấy từ nguồn khác, ghi rõ nguồn dữ liệu.
-
-## Ghi chú thêm
-
-README là trang giới thiệu sản phẩm.
-
-Nội dung nên ngắn, rõ và dễ hiểu.
-
-Không cần viết quá nhiều chi tiết giống `GROUP_FOOTPRINT.md`.

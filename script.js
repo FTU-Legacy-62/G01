@@ -70,23 +70,27 @@ const careerDescriptions = {
     "ENTJ": "You demonstrate a strong preference for leadership, strategic thinking, and achieving challenging goals. Investment Banking rewards these traits because success depends on analytical ability, resilience, and performing under high pressure."
 };
 
-// --- NEW DATA ADDITIONS FROM REPORT DATABASE ---
+// --- NEW DATA ADDITIONS FROM REPORT DATABASE (INTEGRATED WITH SAPP LINKS) ---
 const careerDetailedReport = {
     "ISTJ": {
         looksLike: "Reviewing financial files, assessing organizational workflows, examining internal controls, testing statements for compliance, and identifying anomalies.",
         strengths: ["Dependable & responsible under strict deadlines", "Systematic approach to logical data verification", "Exceptional focus on granular structural details"],
         challenges: ["Working within highly ambiguous instructions", "Presenting financial details storytelling-style to non-finance teams"],
         skills: ["Advanced Excel & Power BI", "Financial Statement Analysis", "Internal Controls & Risk Audit Frameworks"],
-        certifications: ["ACCA (Association of Chartered Financial Accountants)", "CPA Vietnam", "MOS Excel Foundation"],
-        roadmap: ["Years 1-2: Master accounting fundamentals & Excel metrics.", "Years 2-3: Complete foundational ACCA modules; network at career fairs.", "Years 3-4: Secure an Audit/Tax internship at a Big 4 or Mid-Tier firm."],
-        employers: ["Big Four (Deloitte, EY, PwC, KPMG)", "Mid-Tier (Grant Thornton, Mazars, RSM)", "Corporate Finance Departments (Vinamilk, Masan, Vingroup)"]
+        certifications: [
+            `<a href="https://sapp.edu.vn/bai-viet-acca/acca-la-gi-co-hoi-nghe-nghiep-tu-viec-hoc-acca/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">ACCA (Association of Chartered Certified Accountants)</a>`,
+            `<a href="https://sapp.edu.vn/certifr-la-gi/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">CertIFRS (International Financial Reporting Standards)</a>`,
+            "CPA Vietnam & MOS Excel Foundation"
+        ],
+        roadmap: ["Years 1-2: Master accounting fundamentals & Excel metrics.", "Years 2-3: Complete foundational ACCA modules; network at career fairs.", `Years 3-4: Boost performance with the <a href="https://sapp.edu.vn/khoa-hoc-luyen-thi-big4-cap-toc/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">SAPP Big 4 Fast-Track Preparation Course</a> to secure top-tier roles.`],
+        employers: [`<a href="https://sapp.edu.vn/khoa-hoc-luyen-thi-big4-cap-toc/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">Big Four Firms (Deloitte, EY, PwC, KPMG)</a>`, "Mid-Tier (Grant Thornton, Mazars, RSM)", "Corporate Finance Departments (Vinamilk, Masan, Vingroup)"]
     },
     "ISFJ": {
         looksLike: "Processing secure customer transactions behind the scenes, tracking clear settlement operations, processing loans, and monitoring banking operational risks.",
         strengths: ["Highly process-oriented with transaction records", "Patient & methodical with critical daily workflows", "Collaborative mindset focused on operational stability"],
         challenges: ["Coping with sudden software configuration updates", "Taking rapid risks with zero data validation"],
         skills: ["Payment Clearing Systems", "Operational Risk Management", "Workflow Mapping & Process Verification"],
-        certifications: ["Banking Operations Specialized Credentials", "Internal Risk & AML Control Frameworks", "MOS Excel Mastery"],
+        certifications: ["Banking Operations Specialized Credentials", "Internal Risk & AML Control Frameworks", "MOS Excel Mastery (Note: No direct SAPP course match for branch operational frameworks)"],
         roadmap: ["Years 1-2: Learn commercial banking services and core workflows.", "Years 2-3: Participate in local financial compliance workshops.", "Years 3-4: Complete an operational back-office or branch support internship."],
         employers: ["State-Owned Banks (Vietcombank, BIDV, VietinBank)", "Commercial Banks (Techcombank, MB Bank, ACB)", "Fintech Infrastructure (MoMo, VNPay, ZaloPay)"]
     },
@@ -95,16 +99,19 @@ const careerDetailedReport = {
         strengths: ["Deep intellectual curiosity regarding system interactions", "Recognizing complex structural trends early", "Communicating tricky context topics clearly"],
         challenges: ["Suffering from analysis paralysis due to perfectionism", "Over-focusing on long-term vision over short-term actions"],
         skills: ["Industry and Macroeconomic Analysis", "Market Research Analytics", "Data Storytelling & Synthesis"],
-        certifications: ["CPA / CFA Level 1 Starter Track", "Data Insights Track (Tableau / Power BI)", "Market Intelligence Accreditations"],
-        roadmap: ["Years 1-2: Join economics debate/research clubs and build vocabulary.", "Years 2-3: Draft practice market briefs and learn data visualization.", "Years 3-4: Secure internships in Market Intelligence or Corporate Strategy."],
-        employers: ["Research Divisions (SSI Research, Vietcap Research, FiinGroup)", "Global Advisories (McKinsey, BCG, Big 4 Strategy)", "Regulators & Think Tanks (State Bank of Vietnam)"]
+        certifications: [
+            `<a href="https://sapp.edu.vn/cfa-la-gi/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">CFA (Chartered Financial Analyst) Level 1 Track</a>`,
+            "Market Intelligence Accreditations"
+        ],
+        roadmap: ["Years 1-2: Join economics debate/research clubs and build vocabulary.", "Years 2-3: Draft practice market briefs and learn data visualization.", `Years 3-4: Prepare via the <a href="https://sapp.edu.vn/khoa-hoc-luyen-thi-big4-cap-toc/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">SAPP Big 4 Prep Program</a> to pivot into global corporate strategy roles.`],
+        employers: ["Research Divisions (SSI Research, Vietcap Research, FiinGroup)", `Global Strategy Advisories & <a href="https://sapp.edu.vn/khoa-hoc-luyen-thi-big4-cap-toc/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">Big 4 Advisory Arms</a>`, "Regulators & Think Tanks (State Bank of Vietnam)"]
     },
     "INTJ": {
         looksLike: "Evaluating corporate valuations, monitoring portfolio risks, analyzing balance sheet mechanics, and publishing actionable buy/sell equity reports.",
         strengths: ["Highly strategic, independent investment logic", "Objective, metrics-driven trend forecasting", "Comfortable processing complex risk frameworks"],
         challenges: ["Navigating collaborative tasks packed with groupthink", "Compromising analytical accuracy for speed"],
         skills: ["Financial Modeling & Valuation", "Equity Research Report Writing", "Quantitative Industry Matrixing"],
-        certifications: ["CFA (Chartered Financial Analyst)", "Advanced Valuation Accreditations", "Financial Modeling Certs"],
+        certifications: [`<a href="https://sapp.edu.vn/cfa-la-gi/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">CFA (Chartered Financial Analyst) Program</a>`, "Advanced Valuation & Financial Modeling Accreditations"],
         roadmap: ["Years 1-2: Target financial modeling mastery & global news tracking.", "Years 2-3: Enter student valuation hackathons and clear CFA Level 1.", "Years 3-4: Intern at an asset management or investment research desk."],
         employers: ["Fund Managers (Dragon Capital, VinaCapital)", "Securities Desks (SSI, Vietcap, VNDirect Securities)", "Boutique Investment Advisory Firms"]
     },
@@ -113,7 +120,7 @@ const careerDetailedReport = {
         strengths: ["Adaptive problem-solving during code/logic failures", "Combines accounting logic with technical tools", "Highly independent project developer"],
         challenges: ["Handling corporate red tape and slow-moving processes", "Drafting massive blocks of theoretical reports"],
         skills: ["SQL Data Architecture", "Python or R scripting basics", "Fintech Product Logic & Pipelines"],
-        certifications: ["Google Data Analytics Professional Cert", "SQL Masterclasses", "Product Management Accreditations"],
+        certifications: ["Google Data Analytics Professional Cert", "SQL Masterclasses (Note: No direct SAPP course match for tech/software engineering stacks)"],
         roadmap: ["Years 1-2: Study technical database setups alongside basic finance.", "Years 2-3: Join hackathons or design alternative-lending case projects.", "Years 3-4: Secure internships at dynamic tech hubs or sandbox departments."],
         employers: ["Top-Tier Fintechs (MoMo, ZaloPay, VNPay)", "Digital Bank Hubs (Timo, TPBank Digital Innovation)", "Tech Consulting Tech-Labs"]
     },
@@ -122,7 +129,7 @@ const careerDetailedReport = {
         strengths: ["Natural empathetic listening style", "Highly flexible and responsive under stressful client queries", "Builds enduring personal trust and loyalty"],
         challenges: ["Enforcing strict technical corporate contracts", "Working inside cold, isolated back-office environments"],
         skills: ["Client Relationship Optimization", "Escalation Resolution Strategies", "Core Bank Product Mechanics"],
-        certifications: ["Wealth Management Basics Tracks", "Customer Service Excellence Accreditations", "English Business Communications"],
+        certifications: ["Wealth Management Basics Tracks", "Customer Service Excellence Accreditations (Note: No direct SAPP course match for frontline hospitality/CS tracks)"],
         roadmap: ["Years 1-2: Improve presentation warmth and public speaking skills.", "Years 2-3: Volunteer for student hospitality or club partnership leads.", "Years 3-4: Intern in Retail Client relations, Onboarding, or Sales Supp."],
         employers: ["Commercial Bank Priority Lounges (Techcombank Priority, MB Private)", "Foreign Banks (HSBC, Standard Chartered)", "Fintech Client Success Divisions"]
     },
@@ -131,16 +138,7 @@ const careerDetailedReport = {
         strengths: ["Deep motivation to drive real-world socioeconomic value", "Empathetic, clear communication of complicated money topics", "Creative alternative program development"],
         challenges: ["Coping with hyper-competitive corporate sales environments", "Making purely cut-throat financial decisions"],
         skills: ["Curriculum & Educational Planning", "Financial Literacy Campaign Strategy", "Public Workshop Presentation"],
-        certifications: ["Personal Wealth Advisor Credentials", "ESG & Sustainability Impact Accreditations", "Content Presentation Mastery"],
-        roadmap: ["Years 1-2: Design simple budgeting infographics for student clubs.", "Years 2-3: Lead educational charity initiatives or run literacy webinars.", "Years 3-4: Intern at non-profit funds, personal apps, or corporate ESG desks."],
-        employers: ["Educational Apps (Simplize, Vietstock Media)", "Impact Desks (Fintech Literacy Frameworks, MoMo, Timo)", "Socioeconomic NGOs & Sustainable Micro-finance Desks"]
-    },
-    "INFP": {
-        looksLike: "Developing personal finance modules, creating accessible budgeting tools, teaching financial literacy workshops, and managing ESG sustainability programs.",
-        strengths: ["Deep motivation to drive real-world socioeconomic value", "Empathetic, clear communication of complicated money topics", "Creative alternative program development"],
-        challenges: ["Coping with hyper-competitive corporate sales environments", "Making purely cut-throat financial decisions"],
-        skills: ["Curriculum & Educational Planning", "Financial Literacy Campaign Strategy", "Public Workshop Presentation"],
-        certifications: ["Personal Wealth Advisor Credentials", "ESG & Sustainability Impact Accreditations", "Content Presentation Mastery"],
+        certifications: ["Personal Wealth Advisor Credentials", "ESG & Sustainability Impact Accreditations (Note: No direct SAPP course match for non-profit/social literacy advocacy)"],
         roadmap: ["Years 1-2: Design simple budgeting infographics for student clubs.", "Years 2-3: Lead educational charity initiatives or run literacy webinars.", "Years 3-4: Intern at non-profit funds, personal apps, or corporate ESG desks."],
         employers: ["Educational Apps (Simplize, Vietstock Media)", "Impact Desks (Fintech Literacy Frameworks, MoMo, Timo)", "Socioeconomic NGOs & Sustainable Micro-finance Desks"]
     },
@@ -149,7 +147,7 @@ const careerDetailedReport = {
         strengths: ["Flawless mathematical reasoning and logic", "Deeply enjoys processing highly experimental datasets", "Spots systemic anomalies that others overlook"],
         challenges: ["Explaining complex code structures to non-technical boards", "Adhering to repetitive administrative check-ins"],
         skills: ["Quantitative Data Engineering (Python / R)", "Statistical Volatility Analysis", "Algorithmic Architecture Concepts"],
-        certifications: ["CFA Level 1 or FRM (Financial Risk Manager)", "Advanced Python Data Analytics Certifications"],
+        certifications: [`<a href="https://sapp.edu.vn/cfa-la-gi/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">CFA (Chartered Financial Analyst) Level 1</a>`, "FRM (Financial Risk Manager) Starter Track"],
         roadmap: ["Years 1-2: Master advanced statistics, calculus, and programming.", "Years 2-3: Build custom trading scripts and clean public datasets.", "Years 3-4: Intern inside automated trading houses or central risk labs."],
         employers: ["Quantitative Hedge Funds & Proprietary Trading Hubs", "Risk Modeling Desks (Techcombank, VPBank)", "Data Science Consultancies (McKinsey Analytics)"]
     },
@@ -158,7 +156,7 @@ const careerDetailedReport = {
         strengths: ["Instant decision-making under fast, changing market pressures", "High confidence during high-stakes corporate negotiation", "Exceptional commercial intuition and street-smarts"],
         challenges: ["Sitting through extended multi-month strategy timelines", "Writing long-winded technical report text documents"],
         skills: ["Technical Analysis & Chart Dynamics", "Client Sales & Negotiation Tactics", "Real-Time Securities Compliance"],
-        certifications: ["State Securities Commission (SSC) Licensing", "Advanced Financial Trading Accreditations"],
+        certifications: ["State Securities Commission (SSC) Licensing", "Advanced Financial Trading Accreditations (Note: No direct SAPP course match for retail stock charting or technical trading)"],
         roadmap: ["Years 1-2: Track live market updates and manage a paper portfolio.", "Years 2-3: Join mock stock trading contents and hone pitching skills.", "Years 3-4: Secure an internship at a highly active stock brokerage desk."],
         employers: ["Top Securities Brokerages (SSI, VNDirect, HSC Securities)", "Commodities & FX Trading Desks", "Independent Proprietary Trading Shops"]
     },
@@ -167,7 +165,7 @@ const careerDetailedReport = {
         strengths: ["Radiant enthusiasm that immediately engages prospects", "Phenomenal verbal presentation skills", "Thrives in active, relationship-heavy settings"],
         challenges: ["Sitting for hours auditing static backend error logs", "Adhering strictly to isolated spreadsheet duties"],
         skills: ["Consumer Product Structuring", "High-Conversion Sales Conversion", "Interpersonal Communication Mastery"],
-        certifications: ["Retail Banking Professional Tracks", "Relationship Management Certifications"],
+        certifications: ["Retail Banking Professional Tracks", "Relationship Management Certifications (Note: No direct SAPP course match for high-volume retail branch sales)"],
         roadmap: ["Years 1-2: Excel in front-facing customer service roleplays or club sales.", "Years 2-3: Master retail product insights (cards, insurance, loans).", "Years 3-4: Intern at a high-volume retail branch as a Client Associate."],
         employers: ["Retail Heavy Commercial Banks (VPBank, Techcombank, ACB)", "Consumer Finance Entities (FE Credit, Home Credit)", "State Bank Retail Networks"]
     },
@@ -176,7 +174,7 @@ const careerDetailedReport = {
         strengths: ["Creative problem-solver for complex family legacy issues", "Master of relationship management and personal alignment", "Enthusiastic and persuasive long-term strategist"],
         challenges: ["Managing highly repetitive transactional paperwork details", "Coping with brief, volatile down-market quarters without stress"],
         skills: ["High-Net-Worth Portfolio Asset Allocation", "Holistic Financial Planning", "Tax & Trust Structure Strategy"],
-        certifications: ["Certified Financial Planner (CFP) Track", "ChFC / Wealth Management Designations"],
+        certifications: ["Certified Financial Planner (CFP) Track", "ChFC / Wealth Management Designations (Note: No direct SAPP course match for family trust layout planning)"],
         roadmap: ["Years 1-2: Build foundations in tax rules, insurance, and equities.", "Years 2-3: Intern at priority banking sales support and build a LinkedIn presence.", "Years 3-4: Secure a front-facing advisory role path under an elite Private Banker."],
         employers: ["Priority Units (Techcombank Priority, MB Private, VPBank Diamond)", "Foreign Wealth Offices (HSBC Premier, UOB Privilege)", "Boutique Multi-Family Wealth Advisories"]
     },
@@ -186,15 +184,19 @@ const careerDetailedReport = {
         challenges: ["Polishing highly standardized formatting requirements", "Sticking around for long-term project operational rollouts"],
         skills: ["Corporate Strategy Architecture", "Business Model Innovation Analysis", "Executive PowerPoint Presenting"],
         certifications: ["Management Consultant Professional Badges", "Agile / Scrum Project Certification Tracks"],
-        roadmap: ["Years 1-2: Enter prestigious national corporate case competitions.", "Years 2-3: Lead strategic club turns and clear advanced presentation courses.", "Years 3-4: Intern at premium advisory firms or internal corporate labs."],
-        employers: ["Strategy Consultancies (McKinsey, BCG, Bain & Company)", "Big 4 Deal Advisory Teams (PwC Deals, EY Strategy, KPMG)", "Internal Corporate Strategy Groups"]
+        roadmap: ["Years 1-2: Enter prestigious national corporate case competitions.", "Years 2-3: Lead strategic club turns and clear advanced presentation courses.", `Years 3-4: Prepare with the <a href="https://sapp.edu.vn/khoa-hoc-luyen-thi-big4-cap-toc/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">SAPP Big 4 Preparation Program</a> to master case interviews.`],
+        employers: ["Strategy Consultancies (McKinsey, BCG, Bain & Company)", `Deal Advisory Teams (<a href="https://sapp.edu.vn/khoa-hoc-luyen-thi-big4-cap-toc/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">PwC Deals, EY Strategy, KPMG Deal Advisory</a>)`, "Internal Corporate Strategy Groups"]
     },
     "ESTJ": {
         looksLike: "Enforcing internal corporate budgets, preparing performance variance updates, optimizing business capital allocation, and driving departmental targets.",
         strengths: ["Exceptional structural planning and execution leadership", "Enforces clear accountability metrics cleanly", "Highly practical and result-oriented operational tracking"],
         challenges: ["Managing radical strategy pivots lacking clear data", "Navigating highly creative, unstructured creative spaces"],
         skills: ["Corporate Budgeting & Forecasting", "FP&A Variance Analysis", "Strategic Resource Planning"],
-        certifications: ["CMA (Certified Management Accountant)", "ACCA Strategy Modules"],
+        certifications: [
+            `<a href="https://sapp.edu.vn/cma-la-chung-chi-gi/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">CMA (Certified Management Accountant)</a>`,
+            `<a href="https://sapp.edu.vn/gia-tri-danh-vi-cgma/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">CGMA Designation Track</a>`,
+            `<a href="https://sapp.edu.vn/bai-viet-acca/acca-la-gi-co-hoi-nghe-nghiep-tu-viec-hoc-acca/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">ACCA Strategy Modules</a>`
+        ],
         roadmap: ["Years 1-2: Master data aggregation, corporate taxation rules, and Excel.", "Years 2-3: Apply for student treasury roles or manage large club accounts.", "Years 3-4: Intern inside Corporate Treasury or FP&A departments."],
         employers: ["MNC Corporate Hubs (Unilever Vietnam, FPT Corporation)", "FMCG Giants (Vinamilk, Masan Group, Sabeco)", "Heavy Industry Corporate Desks"]
     },
@@ -203,7 +205,7 @@ const careerDetailedReport = {
         strengths: ["Creates incredible alignment and structural team harmony", "Deep sense of professional duty and execution care", "Flawless interpersonal organization style"],
         challenges: ["Executing strict, harsh cost-cutting recommendations", "Working inside completely isolated quantitative positions"],
         skills: ["Service Quality Metrics Optimization", "Cross-Functional Collaboration Management", "Operations Staff Coaching"],
-        certifications: ["Service Operations Management Track", "Project Management Basics (CAPM)"],
+        certifications: ["Service Operations Management Track", "Project Management Basics (CAPM) (Note: No direct SAPP course match for corporate customer care/HR administration metrics)"],
         roadmap: ["Years 1-2: Take coordination roles in student committees.", "Years 2-3: Host networking events and analyze banking support paths.", "Years 3-4: Intern in Customer Experience or Quality Management tracks."],
         employers: ["Commercial Bank Service Centers", "Corporate Operations Management Units", "Fintech Customer Quality Oversight Tracks"]
     },
@@ -212,7 +214,7 @@ const careerDetailedReport = {
         strengths: ["Inspirational leadership profile that builds group consensus", "Fast operational adaptability across varied job desks", "Clear structural strategic planning paired with empathy"],
         challenges: ["Taking purely objective data choices that upset team members", "Handling heavy, non-communicative solo analytics duties"],
         skills: ["Enterprise Project Management", "Executive Stakeholder Storytelling", "Strategic Innovation Planning"],
-        certifications: ["PMP (Project Management Professional) Starter Track", "Agile/Scrum Frameworks"],
+        certifications: ["PMP (Project Management Professional) Starter Track", "Agile/Scrum Frameworks (Note: No direct SAPP course match for generalized cross-departmental HR rotation paths)"],
         roadmap: ["Years 1-2: Run for high-level student government or club president posts.", "Years 2-3: Crack elite corporate case competitions and polish English.", "Years 3-4: Dominate elite Management Trainee assessment selections."],
         employers: ["Elite Management Trainee Pipelines (Unilever, Nestlé, FPT, Masan)", "Bank Leadership Tracks (Techcombank Future Leaders, Vietcombank MT)", "Conglomerate Rotation Hubs"]
     },
@@ -221,9 +223,12 @@ const careerDetailedReport = {
         strengths: ["Unrivaled ambition and resilience under extreme corporate stress", "Powerful analytical modeling paired with executive command", "Laser focused on closing major strategic operations targets"],
         challenges: ["Patience with sluggish internal compliance workflows", "Balancing brutal professional logic with team interpersonal feelings"],
         skills: ["Advanced M&A DCF Financial Valuation", "Deal Pitchbook Storytelling Architecture", "Strategic Transaction Due Diligence"],
-        certifications: ["CFA (Chartered Financial Analyst)", "Investment Banking Corporate Valuation Badges"],
-        roadmap: ["Years 1-2: Maintain a near-perfect GPA while averaging 80-hour work weeks.", "Years 2-3: Master complex corporate modeling and build a boutique deal network.", "Years 3-4: Intern at a top-tier Investment Banking or M&A Advisory desk."],
-        employers: ["Investment Banking Units (SSI, Vietcap, Techcombank IB, MB Bank IB)", "Global Deal Advisories (BDA Partners, PwC Deals, KPMG Deal Advisory)", "Private Capital Networks (Mekong Capital, VinaCapital)"]
+        certifications: [
+            `<a href="https://sapp.edu.vn/cfa-la-gi/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">CFA (Chartered Financial Analyst) Designation</a>`,
+            "Investment Banking Corporate Valuation Badges"
+        ],
+        roadmap: ["Years 1-2: Maintain a near-perfect GPA while averaging 80-hour work weeks.", "Years 2-3: Master complex corporate modeling and build a boutique deal network.", `Years 3-4: Secure internships at top M&A desks; prepare via the <a href="https://sapp.edu.vn/khoa-hoc-luyen-thi-big4-cap-toc/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">SAPP Big 4 Prep Program</a> to clear advisory technical rounds.`],
+        employers: ["Investment Banking Units (SSI, Vietcap, Techcombank IB, MB Bank IB)", `Global Deal Advisories (<a href="https://sapp.edu.vn/khoa-hoc-luyen-thi-big4-cap-toc/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: underline;">PwC Deals, KPMG Deal Advisory</a>)`, "Private Capital Networks (Mekong Capital, VinaCapital)"]
     }
 };
 
@@ -381,6 +386,7 @@ function renderResults() {
             
             <p class="recommendation-text">${description}</p>
             
+            <!-- EXPLICIT PERCENTAGE TRAIT INJECTION -->
             ${calculatePercentages(totals)}
             
             <div class="comic-accordion">
@@ -422,7 +428,7 @@ function renderResults() {
                         <ul class="comic-list">
                             ${detail.skills.map(sk => `<li>${sk}</li>`).join('')}
                         </ul>
-                        <strong style="display:block; margin-top:12px;">Recommended Certifications:</strong>
+                        <strong style="display:block; margin-top:12px;">Recommended Certifications & Course Tracks:</strong>
                         <ul class="comic-list">
                             ${detail.certifications.map(crt => `<li>${crt}</li>`).join('')}
                         </ul>
@@ -478,13 +484,11 @@ window.toggleAccordion = function(headerElement) {
 
 // 11. Core Mathematical Multi-Trait Percentage Matrix 
 function calculatePercentages(totals) {
-    // Dynamically calculate the maximum absolute score possible based on loaded data matrix queries
     const countE = questions.filter(q => q.trait === "E").length || 5;
     const countS = questions.filter(q => q.trait === "S").length || 5;
     const countT = questions.filter(q => q.trait === "T").length || 5;
     const countJ = questions.filter(q => q.trait === "J").length || 5;
 
-    // Linearly translate -Max to +Max range cleanly into 0% to 100% metrics
     const pctE = Math.round(((totals.E + (countE * 2)) / (countE * 4)) * 100);
     const pctI = 100 - pctE;
 
@@ -497,7 +501,6 @@ function calculatePercentages(totals) {
     const pctJ = Math.round(((totals.J + (countJ * 2)) / (countJ * 4)) * 100);
     const pctP = 100 - pctJ;
 
-    // Return layout content structure matching configured style classes
     return `
         <div class="trait-breakdown-container">
             <h3 class="trait-breakdown-title">Your Trait Breakdown</h3>

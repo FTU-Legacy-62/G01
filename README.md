@@ -1,8 +1,8 @@
-# Tên sản phẩm
+# Product Name
 
 FinGuide
 
-## Mã nhóm
+## Code
 
 G01
 

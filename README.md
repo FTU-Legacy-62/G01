@@ -8,8 +8,11 @@ G01
 ## Thành viên
 
 | Trịnh Minh Đức | 2312380007 | Lập trình viên & Trưởng nhóm |
+
 | Nguyễn Hoàng Thu Thảo | 2312380035 | Nghiên cứu nghề nghiệp & Đánh giá định tính |
+
 | Nguyễn Anh Khoa | 2312380013 | Logic MBTI & Hệ thống gợi ý |
+
 | Lê Minh Đăng | 2312380809 | Logic MBTI & Hệ thống gợi ý |
 
 ## Tổng quan

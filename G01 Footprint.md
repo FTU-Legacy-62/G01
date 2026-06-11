@@ -8,121 +8,131 @@ G01
 
 ## Link repo
 
-(https://github.com/FTU-Legacy-62/G01)
+[https://github.com/FTU-Legacy-62/Gxx](https://github.com/FTU-Legacy-62/Gxx)
 
 ## Link demo
 
-(https://ftu-legacy-62.github.io/G01/)
+[https://ftu-legacy-62.github.io/G01/](https://ftu-legacy-62.github.io/G01/)
 
 ## Problem statement
 
-University students majoring in or interested in Finance have little to no knowledge about career opportunities in Finance, difficulty in finding information and what suits them.
+Sinh viên đại học đang theo học hoặc quan tâm đến ngành Tài chính có rất ít hoặc gần như không có kiến thức về các cơ hội nghề nghiệp trong ngành, gặp khó khăn trong việc tìm kiếm thông tin và xác định công việc phù hợp với bản thân.
 
-Financial education center have difficulties connect with people with no experience or knowledge about Finance, Banking, Auditing.
+Các trung tâm đào tạo tài chính gặp khó khăn trong việc kết nối với những người chưa có kinh nghiệm hoặc kiến thức nền tảng về Tài chính, Ngân hàng, Kiểm toán.
 
-Feeling lost or uncertain about choosing an academic major, their first job or planning a long-term study roadmap students are major concerns for university freshers.
+Cảm giác mất phương hướng hoặc không chắc chắn khi chọn chuyên ngành học, công việc đầu tiên hay khi lập lộ trình học tập dài hạn là những mối lo ngại lớn của sinh viên mới vào trường (freshers).
 
 ## Target users
 
-University freshers interested in Finance.
+Sinh viên mới vào trường (freshers) quan tâm đến ngành Tài chính.
 
 ## When will they use FinGuide:
 
-When feeling lost or uncertain about choosing an academic major or their first job.
+Khi cảm thấy mất phương hướng hoặc không chắc chắn về việc chọn chuyên ngành học hoặc công việc đầu tiên.
 
-When planning a long-term study roadmap (deciding which professional certification to pursue).
+Khi lập lộ trình học tập dài hạn (quyết định nên theo đuổi chứng chỉ nghề nghiệp nào).
 
-During career orientation events, industry workshops, or job fairs hosted by SAPP Academy or universities.
+Trong các sự kiện định hướng nghề nghiệp, hội thảo chuyên ngành hoặc ngày hội việc làm do SAPP Academy hoặc các trường đại học tổ chức.
 
 ## What the Product Currently Does
 
-Personality Assessment:
-Allows users to take a 60-question situational test tailored to finance/accounting contexts to calculate trait scores across four spectrums (E/I, S/N, T/F, J/P) and aggregates scores to classify the user into one of the 16 MBTI personality types.
+Đánh giá tính cách:
+Cho phép người dùng thực hiện bài kiểm tra tình huống gồm 60 câu hỏi được thiết kế riêng cho bối cảnh tài chính/kế toán để tính toán điểm số đặc điểm tính cách trên bốn phổ (E/I, S/N, T/F, J/P), từ đó tổng hợp điểm số để phân loại người dùng vào một trong 16 nhóm tính cách MBTI tiêu chuẩn.
 
-Customized Career Report:
-Matches the user with the most suitable finance career path (e.g., INTJ matches with Investment Research, ESFP matches with Retail Banking).
-Provides specific breakdowns including "What the job looks like", "Strengths", and "Challenges".
+Báo cáo nghề nghiệp tùy chỉnh:
+Kết nối người dùng với con đường sự nghiệp tài chính phù hợp nhất (ví dụ: INTJ tương thích với Nghiên cứu đầu tư, ESFP tương thích với Ngân hàng bán lẻ).
+Cung cấp các phân tích chi tiết cụ thể bao gồm "Mô tả công việc thực tế", "Thế mạnh" và "Thách thức".
 
-Roadmap & Educational Recommendations (SAPP Integration):
-Directly links the suggested career paths to specific SAPP courses and certifications (CFA, ACCA, CGMA, CMA, Big 4 Fast-Track) along with a 4-year student roadmap and target employers in Vietnam.
+Lộ trình & Khuyến nghị giáo dục (Tích hợp SAPP):
+Liên kết trực tiếp các con đường sự nghiệp được gợi ý với các khóa học và chứng chỉ cụ thể tại SAPP (CFA, ACCA, CGMA, CMA, Big 4 Fast-Track) cùng với lộ trình 4 năm của sinh viên và các nhà tuyển dụng mục tiêu tại Việt Nam.
 
 ## User flow
 
-1. Open Product: The user accesses the FinGuide web app, views the engaging title, and clicks the "Start" button on the Welcome Screen.
-2. Take the Quiz: The user reads through financial/accounting situational questions sequentially, clicking 1 of 5 expressive option buttons. The top progress bar advances from 0% to 100%.
-3. Background Processing: The user clicks the option for the 20th question, JavaScript processes the math models (aggregating scores, classifying codes, calculating percentages, and building HTML strings) instantly in the background without reloading the page.
-4. View Results: The dashboard automatically unveil the comprehensive report: the 4-letter MBTI code, a comic-style avatar, the ultimate matching finance title, and chunky side-by-side horizontal Trait Breakdown charts (Blue/Pink).
-5. Deep Exploration: The user expands interactive drop-down Accordions to digest the "4-Year Student Roadmap", "Strengths & Challenges", explores embedded SAPP course hyperlinks, or clicks "Do it again!" to reset the state and restart.
+1. Mở sản phẩm: Người dùng truy cập ứng dụng web FinGuide, xem tiêu đề hấp dẫn và nhấp vào nút "Start" trên Màn hình chào mừng.
+
+
+2. Thực hiện trắc nghiệm: Người dùng lần lượt đọc các câu hỏi tình huống tài chính/kế toán một cách tuần tự, nhấp vào 1 trong 5 nút tùy chọn có biểu cảm. Thanh tiến trình phía trên tiến triển từ 0% đến 100%.
+
+
+3. Xử lý dữ liệu ngầm: Khi người dùng nhấp vào tùy chọn cho câu hỏi thứ 20, JavaScript sẽ xử lý các mô hình toán học (cộng dồn điểm số, phân loại mã, tính phần trăm và tạo các chuỗi HTML) ngay lập tức ở chế độ nền mà không cần tải lại trang.
+
+
+4. Xem kết quả: Trang kết quả tự động hiển thị báo cáo toàn diện bao gồm: mã MBTI 4 chữ cái, một hình ảnh đại diện phong cách truyện tranh, chức danh tài chính phù hợp nhất và các biểu đồ thanh ngang Trait Breakdown kích thước lớn nằm cạnh nhau (Xanh dương/Hồng).
+
+
+5. Khám phá chuyên sâu: Người dùng mở rộng các hộp Accordion thả xuống để tìm hiểu "Lộ trình 4 năm của sinh viên", "Thế mạnh & Thách thức", khám phá các siêu liên kết khóa học SAPP được nhúng sẵn, hoặc nhấp vào "Do it again!" để thiết lập lại trạng thái và bắt đầu lại.
+
+
 
 ## Input
 
-Quiz Interactions: User selections on a 5-point Likert scale (ranging from "Nope" [-2] to "Absolutely" [+2]) for each of the 20 questions.
-UI Flow Data: User clicks to toggle and expand detailed report sections (Accordions) to read specific career insights.
+Tương tác trắc nghiệm: Các lựa chọn của người dùng trên thang đo Likert 5 mức độ (từ "Nope" [-2] đến "Absolutely" [+2]) cho mỗi câu hỏi trong số 20 câu hỏi.
+Dữ liệu luồng giao diện (UI Flow): Các lượt nhấp của người dùng để bật tắt và mở rộng các phần báo cáo chi tiết (Accordions) nhằm đọc các phân tích sâu về nghề nghiệp.
 
 ## Process
 
-Scoring Matrix: Each question in the 20-item database is assigned to a specific personality spectrum (E/I, S/N, T/F, J/P) and carries a predetermined weight direction (direction: 1 or -1). When a user selects an option (-2 to +2), the dynamic score calculated is: Selection * Direction.
+Ma trận tính điểm: Mỗi câu hỏi trong cơ sở dữ liệu 20 câu được gán cho một phổ tính cách cụ thể (E/I, S/N, T/F, J/P) và mang một hướng trọng số định sẵn (direction: 1 hoặc -1). Khi người dùng chọn một tùy chọn (-2 đến +2), điểm số động được tính là: Lựa chọn * Trọng số (Direction).
 
-MBTI Classification: The system aggregates total scores for each trait group. If the cumulative score is >= 0, the dominant positive trait (E, S, T, or J) is assigned. If the score is < 0, the negative trait (I, N, F, or P) is selected instead. These four final letters concatenate into a unified MBTI code (e.g., ISTJ, ENTJ).
+Phân loại MBTI: Hệ thống tổng hợp tổng điểm cho từng nhóm đặc tính. Nếu điểm tích lũy >= 0, đặc tính dương trội (E, S, T hoặc J) sẽ được chỉ định. Nếu điểm số < 0, đặc tính âm (I, N, F hoặc P) sẽ được chọn. Bốn chữ cái cuối cùng này sẽ được ghép chuỗi thành một mã MBTI thống nhất (ví dụ: ISTJ, ENTJ).
 
-Percentage Normalization Algorithm (Trait Breakdown): To feed the horizontal progress bars, linear raw scores are converted into a readable 0% - 100% scale using a mathematical proportion formula based on the maximum possible score per trait.
+Thuật toán chuẩn hóa phần trăm (Trait Breakdown): Để cung cấp dữ liệu cho các thanh tiến trình ngang, điểm thô tuyến tính được chuyển đổi sang thang đo 0% - 100% dễ đọc bằng công thức tỷ lệ toán học dựa trên số điểm tối đa có thể đạt được cho mỗi đặc tính.
 
-SAPP Education Data Mapping: The system automatically injects HTML hyperlinks pointing directly to corresponding professional training tracks at SAPP Academy (ACCA, CFA, CMA, CGMA, Big 4 Fast-Track). If a career path lacks a matching course, it seamlessly skips the link with an explicit note.
+Ánh xạ dữ liệu giáo dục SAPP: Hệ thống tự động chèn các siêu liên kết HTML dẫn trực tiếp đến các chương trình đào tạo chuyên nghiệp tương ứng tại SAPP Academy (ACCA, CFA, CMA, CGMA, Big 4 Fast-Track). Nếu một con đường sự nghiệp thiếu khóa học tương thích, hệ thống sẽ bỏ qua liên kết một cách mượt mà đi kèm một ghi chú rõ ràng.
 
 ## Output
 
-Personality Classifier:
-Pinpoints exactly 1 of the 16 MBTI personality groups paired with an exclusive illustrative visual avatar.
+Phân loại tính cách:
+Xác định chính xác 1 trong 16 nhóm tính cách MBTI đi kèm với một hình ảnh đại diện minh họa trực quan độc quyền.
 
-Finance Career Profile:
-Comprehensive textual insights mapping out a realistic "day-in-the-life" job overview, clean bullet points detailing Strengths & Development Challenges, and priority professional skills.
+Hồ sơ nghề nghiệp tài chính:
+Các phân tích văn bản toàn diện phác thảo cái nhìn tổng quan thực tế về công việc "một ngày như thế nào", các mục đầu dòng rõ ràng chi tiết về Thế mạnh & Thách thức phát triển, và các kỹ năng chuyên môn ưu tiên.
 
-Actionable Student Roadmap:
-A step-by-step 4-year strategic timeline (Freshman-Sophomore, Junior, Senior phases) tailored for university students.
+Lộ trình sinh viên thực tế:
+Một dòng thời gian chiến lược 4 năm từng bước (giai đoạn Năm nhất-Năm hai, Năm ba, Năm tư) được thiết kế riêng cho sinh viên đại học.
 
-Educational Hyperlinks: Bold, highly visible color-coded links seamlessly embedded in text components, channeling users to official SAPP Academy course/certification landing pages.
+Siêu liên kết giáo dục: Các liên kết mã màu nổi bật, hiển thị rõ ràng được nhúng mượt mà trong các cấu phần văn bản, định hướng người dùng đến các trang thông tin khóa học/chứng chỉ chính thức của SAPP Academy.
 
 ## Key Design Decision
 
-Why choose this problem and target audience?
-Economics and Finance students in Vietnam often choose their majors based on generalized hype or peer trends, leaving them confused about actual corporate duties post-graduation. This tool mitigates early career mismatch right from the university level.
+Tại sao chọn vấn đề này và đối tượng mục tiêu này?
+Sinh viên ngành Kinh tế và Tài chính tại Việt Nam thường chọn ngành học dựa trên xu hướng đám đông hoặc lời truyền miệng chung chung, khiến họ bị mơ hồ về các nhiệm vụ thực tế tại doanh nghiệp sau khi tốt nghiệp. Công cụ này giảm thiểu sự lệch hướng nghề nghiệp sớm ngay từ cấp độ đại học.
 
-Why choose an MBTI-like quiz combined with a Comic Book interface?
-Traditional corporate assessments and career tests are often dry, rigid, and overly academic, which can easily intimidate younger audiences or make them disengaged.
-Pairing a highly recognizable, relatable framework like MBTI with a vibrant, comic-book look (thick black strokes, high-contrast palettes, and expressive emojis) transforms a serious career evaluation into a fun, gamified journey. This dynamic approach effectively lowers the psychological barrier to entry, making the self-discovery process feel welcoming, fun, and significantly more friendly and approachable for freshers who are just starting to navigate the corporate world.
+Tại sao chọn bài trắc nghiệm kiểu MBTI kết hợp với giao diện Truyện tranh (Comic Book)?
+Các bài đánh giá doanh nghiệp và kiểm tra nghề nghiệp truyền thống thường khô khan, cứng nhắc và đặt nặng tính học thuật, điều này dễ làm cho những người trẻ tuổi cảm thấy e dè hoặc mất hứng thú.
+Việc kết hợp một khung lý thuyết quen thuộc, dễ tiếp cận như MBTI với giao diện truyện tranh sống động (đường nét đen dày, bảng màu tương phản cao và các biểu tượng cảm xúc sinh động) biến một bài đánh giá nghề nghiệp nghiêm túc thành một hành trình trò chơi hóa vui vẻ. Phương pháp năng động này giúp hạ thấp rào cản tâm lý khi tiếp cận một cách hiệu quả, làm cho quá trình tự khám phá bản thân trở nên thân thiện, thú vị và dễ tiếp cận hơn rất nhiều đối với các bạn freshers bước đầu định hình lộ trình công việc.
 
-Why directly integrate SAPP course tracks?
-Orientation is hollow without actionable next steps. Integrating world-class certifications (ACCA, CFA, etc.) alongside official SAPP informational articles instantly delivers a practical, highly credible "next step" to the user's educational journey.
+Tại sao tích hợp trực tiếp các chương trình học của SAPP?
+Định hướng sự nghiệp sẽ trở nên sáo rỗng nếu thiếu đi các bước hành động tiếp theo. Việc tích hợp các chứng chỉ chuẩn quốc tế (ACCA, CFA, v.v.) cùng với các bài viết thông tin chính thức của SAPP ngay lập tức mang lại một "bước đi tiếp theo" thực tế và có độ tin cậy cao cho hành trình học tập của người dùng.
 
 ## Highlights
 
-Logical Processing & Accurate MBTI-to-Career Mapping: successfully built a logical matrix that accurately connects the 16 MBTI personality types to highly specific, real-world roles within the finance industry. This deep logical bridging ensures the career recommendations are highly personalized, convincing, and practically valuable to the user.
+Xử lý logic & Ánh xạ MBTI-nghề nghiệp chính xác: Xây dựng thành công một ma trận logic giúp kết nối chính xác 16 nhóm tính cách MBTI với các vai trò cụ thể, thực tế trong ngành tài chính. Sự kết nối logic sâu sắc này đảm bảo các khuyến nghị nghề nghiệp mang tính cá nhân hóa cao, thuyết phục và có giá trị thực tiễn cho người dùng.
 
-Fluid Single-Page App Performance: Handling question transitions and report generations exclusively via raw client-side JavaScript creates a highly polished, snappy experience with zero server lag.
+Hiệu năng ứng dụng Single-Page mượt mà: Việc xử lý chuyển đổi câu hỏi và tạo báo cáo độc quyền thông qua JavaScript thuần phía máy khách (client-side) tạo ra trải nghiệm tinh tế, nhanh chóng và hoàn toàn không có độ trễ máy chủ.
 
-Smart Layout Organization: Relying on interactive Accordion components to present deep-dive reports keeps text blocks hidden until requested. This prevents information overload upon first arriving at the results page while conserving vertical screen space.
+Tổ chức bố cục thông minh: Việc sử dụng các cấu phần Accordion tương tác để trình bày các báo cáo chuyên sâu giúp giữ cho các khối văn bản được ẩn đi cho đến khi có yêu cầu. Điều này ngăn chặn tình trạng quá tải thông tin khi vừa truy cập trang kết quả, đồng thời tiết kiệm không gian màn hình theo chiều dọc.
 
 ## Limitations
 
-Strictly limited to 16 MBTI profiles: relies on the standard framework of 2 traits per category. Scaling up the personality resolution (e.g., expanding to 3 traits per category, create 81 distinct combinations) demands an impractical volume of unique content and is completely unfeasible for a Minimum Viable Product (MVP).
+Giới hạn nghiêm ngặt trong 16 hồ sơ MBTI: Hoạt động dựa trên khung tiêu chuẩn gồm 2 đặc tính cho mỗi danh mục. Việc mở rộng độ phân giải tính cách (ví dụ: mở rộng thành 3 đặc tính cho mỗi danh mục, tạo ra 81 tổ hợp khác nhau) đòi hỏi một khối lượng nội dung độc duy nhất khổng lồ và hoàn toàn không khả thi đối với một Sản phẩm khả dụng tối thiểu (MVP).
 
-No Persistent Data Storage: Since the engine relies entirely on client-side JS memory variables, hitting F5 (Refresh) or closing the tab completely erases report data. There is currently no built-in mechanism to download results as PDFs or cache progress in LocalStorage.
+Không có lưu trữ dữ liệu bền vững: Vì bộ máy phụ thuộc hoàn toàn vào các biến bộ nhớ JavaScript phía máy khách, việc nhấn F5 (Tải lại trang) hoặc đóng tab sẽ xóa hoàn toàn dữ liệu báo cáo. Hiện tại chưa có cơ chế tích hợp để tải kết quả dưới dạng PDF hoặc lưu tiến trình trong LocalStorage.
 
-Course Inventory Gaps:
-Profiles matching retail banking branch tracks (ESFP, ESFJ, ISFJ) or tech-heavy Fintech engineering pipelines (ISTP), the system leaves an empty note because some finance education center lacks direct training programs for those specific back-office/technical operational niches.
+Khoảng trống danh mục khóa học:
+Đối với các hồ sơ phù hợp với mảng ngân hàng bán lẻ (ESFP, ESFJ, ISFJ) hoặc các định hướng kỹ thuật công nghệ Fintech (ISTP), hệ thống sẽ để lại một ghi chú trống vì một số trung tâm đào tạo tài chính thiếu các chương trình đào tạo trực tiếp cho các phân khúc vận hành kỹ thuật/hậu cần cụ thể đó.
 
 ## What the Team Learned
 
-User Behavior Analysis and Problem Resolution: We identified that presenting highly specialized content (such as complex Finance and Accounting frameworks) via traditional academic methods poses a significant barrier to engagement for younger demographics (Gen Z). Implementing gamification techniques through vibrant, visually stimulating interfaces and intuitive icons proved highly effective in mitigating these barriers and maximizing user retention.
+Phân tích hành vi người dùng và Giải quyết vấn đề: Chúng em nhận thấy rằng việc trình bày nội dung chuyên môn cao (như các khung tài chính và kế toán phức tạp) qua các phương pháp học thuật truyền thống tạo ra một rào cản lớn đối với việc tiếp cận của nhóm người dùng trẻ (Gen Z). Việc triển khai các kỹ thuật trò chơi hóa thông qua giao diện sống động, kích thích thị giác và các biểu tượng trực quan đã chứng minh tính hiệu quả cao trong việc giảm thiểu các rào cản này và tối đa hóa việc giữ chân người dùng.
 
-Logical Architecture and Data Processing: The team acquired proficiency in engineering a linear scoring matrix and an MBTI classification algorithm utilizing strictly Vanilla JavaScript. By applying directional weighting (1 or -1) to individual variables, we significantly optimized the codebase, bypassing the need for redundant conditional statements. Furthermore, we recognized the strategic necessity of strict scope management—limiting the framework to 16 personality prototypes to ensure the MVP remained viable and deliverable.
+Kiến trúc logic và Xử lý dữ liệu: Đội ngũ đã tích lũy được năng lực trong việc xây dựng ma trận tính điểm tuyến tính và thuật toán phân loại MBTI sử dụng hoàn toàn Vanilla JavaScript. Bằng cách áp dụng hướng trọng số (1 hoặc -1) cho các biến số riêng lẻ, chúng em đã tối ưu hóa mã nguồn đáng kể, bỏ qua các câu lệnh điều kiện lặp đi lặp lại. Hơn nữa, chúng em nhận thức được tầm quan trọng chiến lược của việc quản lý phạm vi nghiêm ngặt — giới hạn khung ở 16 mô hình tính cách để đảm bảo MVP khả thi và có thể bàn giao.
 
-UI/UX Design and Optimization: We substantially advanced our capabilities in dynamic data visualization. The systematic debugging of the Trait Breakdown component enabled the team to master advanced CSS methodologies (Flexbox, Grid), ensuring the interface maintains structural integrity, responsiveness, and visual sharpness across all screen dimensions and device types.
+Thiết kế và Tối ưu hóa UI/UX: Chúng em đã nâng cao đáng kể khả năng của mình trong việc trực quan hóa dữ liệu động. Quá trình khắc phục lỗi hệ thống cho cấu phần Trait Breakdown một cách có hệ thống đã giúp nhóm làm chủ các phương pháp CSS nâng cao (Flexbox, Grid), đảm bảo giao diện duy trì tính toàn vẹn cấu trúc, khả năng đáp ứng và độ sắc nét về mặt hình ảnh trên tất cả các kích thước màn hình và loại thiết bị.
 
-Product Demonstration and Communication: We concluded that a premium software product requires an uninterrupted experiential flow. Utilizing a Single-Page Application (SPA) architecture eliminated latency and page reloads, ensuring a seamless user journey. This instantaneous data transition significantly elevated the professional impact of our live product demonstrations.
+Trình diễn sản phẩm và Giao tiếp: Chúng em kết luận rằng một sản phẩm phần mềm cao cấp đòi hỏi một luồng trải nghiệm không gián đoạn. Việc sử dụng kiến trúc Ứng dụng một trang (SPA) đã loại bỏ độ trễ và việc tải lại trang, đảm bảo hành trình người dùng diễn ra liền mạch. Sự chuyển đổi dữ liệu tức thời này đã nâng cao đáng kể tác động chuyên nghiệp cho các buổi demo sản phẩm trực tiếp của chúng em.
 
 ## Recommendations for Future Cohorts
 
-Scope Management and Feature Creep Avoidance: It is imperative to maintain focus on perfecting the core functional loop. We caution against hyper-expanding the personality matrix into unmanageable permutations (e.g., 81 or 256 types). The exponential increase in customized content generation would severely strain resource allocation for an academic project.
+Quản lý phạm vi và Phòng tránh bẫy phình chướng tính năng (Feature Creep): Việc duy trì sự tập trung vào hoàn thiện vòng chức năng cốt lõi là điều bắt buộc. Chúng em cảnh báo việc mở rộng quá mức ma trận tính cách thành các hoán vị không thể quản lý (ví dụ: 81 hoặc 256 loại). Sự gia tăng lũy thừa trong việc tạo nội dung tùy chỉnh sẽ gây áp lực nghiêm trọng lên việc phân bổ nguồn lực cho một dự án học thuật.
 
-Empirical Data Acquisition and Expansion: To elevate the authenticity and practical value of the career reports, future cohorts should conduct primary market research by interviewing active industry professionals. Integrating empirical data, such as real-world industry quotes and contemporary entry-level salary ranges, will significantly enhance the platform's credibility. Furthermore, the educational database should be expanded to encompass comprehensive professional development areas currently outside the scope of the existing curriculum framework.
+Thu thập và Mở rộng dữ liệu thực nghiệm: Để nâng cao tính xác thực và giá trị thực tiễn của các báo cáo nghề nghiệp, các khóa sau nên tiến hành nghiên cứu thị trường sơ cấp bằng cách phỏng vấn các chuyên gia đang hoạt động trong ngành. Việc tích hợp dữ liệu thực nghiệm, chẳng hạn như các trích dẫn thực tế từ ngành và các khung lương khởi điểm đương đại, sẽ nâng cao đáng kể uy tín của nền tảng. Hơn nữa, cơ sở dữ liệu giáo dục nên được mở rộng để bao gồm các lĩnh vực phát triển chuyên môn toàn diện hiện đang nằm ngoài phạm vi của khung chương trình giảng dạy hiện tại.

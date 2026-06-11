@@ -1,68 +1,57 @@
-# Product Name
+## Tên sản phẩm
 
 FinGuide
 
-## Code
-
+## Mã nhóm
 G01
 
-## Members
+## Thành viên
 
-| Trịnh Minh Đức | 2312380007 | Coder & Leader |
+| Trịnh Minh Đức | 2312380007 | Lập trình viên & Trưởng nhóm |
+| Nguyễn Hoàng Thu Thảo | 2312380035 | Nghiên cứu nghề nghiệp & Đánh giá định tính |
+| Nguyễn Anh Khoa | 2312380013 | Logic MBTI & Hệ thống gợi ý |
+| Lê Minh Đăng | 2312380809 | Logic MBTI & Hệ thống gợi ý |
 
-| Nguyễn Hoàng Thu Thảo | 2312380035 | Career Research & Quanlitative Benchmarking |
+## Tổng quan
 
-| Nguyễn Anh Khoa | 2312380013 | MBTI Logic & Recommendation System |
+Một trang web trắc nghiệm giúp xác định các đặc điểm tính cách của người dùng, tìm ra điểm mạnh của họ và kết nối nhóm tính cách đó với một lộ trình nghề nghiệp phù hợp. Dựa trên nền tảng của MBTI, chúng em hướng tới tiếp cận nhiều sinh viên ngành Tài chính nhất có thể thông qua sự quen thuộc và giao diện độc đáo, thú vị. Các gợi ý sẽ đi kèm đường liên kết hoặc giới thiệu đến các trung tâm đào tạo tài chính như SAPP hoặc SmartTrain, đóng vai trò như một phương thức gây quỹ cho dự án.
 
-| Lê Minh Đăng | 2312380809 | MBTI Logic & Recommendation System |
+## Vấn đề đặt ra
+Sinh viên đại học đang theo học hoặc quan tâm đến ngành Tài chính có rất ít hoặc gần như không có kiến thức về các cơ hội nghề nghiệp trong ngành, gặp khó khăn trong việc tìm kiếm thông tin và xác định công việc phù hợp với bản thân.
 
-## Overview
+Các trung tâm đào tạo tài chính gặp khó khăn trong việc kết nối với những người chưa có kinh nghiệm hoặc kiến thức nền tảng về Tài chính, Ngân hàng, Kiểm toán.
 
-A multiple choice website that determines the user’s personality traits, find what they accelerate in and match that personality type with a career path. Based on the foundation of MBTI, we aim to reach out to as many Finance majors through familiarity and quirky feel. With the recommendation will include links or referal to financial education center, like SAPP or SmartTrain, as a means to fund the project. 
+Cảm giác mất phương hướng hoặc không chắc chắn khi chọn chuyên ngành học, công việc đầu tiên hay khi lập lộ trình học tập dài hạn là những mối lo ngại lớn của sinh viên mới vào trường (freshers).
 
-## Problem statement
+## Người dùng mục tiêu
 
-University students majoring in or interested in Finance have little to no knowledge about career opportunities in Finance, difficulty in finding information and what suits them.
+Sinh viên mới vào trường (freshers) quan tâm đến ngành Tài chính.
 
-Financial education center have difficulties connect with people with no experience or knowledge about Finance, Banking, Auditing
+### Khi nào họ sẽ sử dụng FinGuide:
+Khi cảm thấy mất phương hướng hoặc không chắc chắn về việc chọn chuyên ngành học hoặc công việc đầu tiên.
 
-Feeling lost or uncertain about choosing an academic major, their first job or planning a long-term study roadmap students are major concerns for university freshers
+Khi lập lộ trình học tập dài hạn (quyết định nên theo đuổi chứng chỉ nghề nghiệp nào).
 
-## Target users
+Trong các sự kiện định hướng nghề nghiệp, hội thảo chuyên ngành hoặc ngày hội việc làm do SAPP Academy hoặc các trường đại học tổ chức.
 
-University freshers interested in Finance
+## Các tính năng chính
 
+Đánh giá MBTI trong bối cảnh Tài chính: Bài trắc nghiệm tình huống gồm 20 câu hỏi được thiết kế riêng cho các kịch bản tài chính và kế toán để đánh giá các đặc điểm hành vi cốt lõi.
 
-## When will they use FinGuide:
+Bản đồ nghề nghiệp logic: Ma trận dựa trên logic giúp sắp xếp chính xác 16 nhóm tính cách MBTI tiêu chuẩn với các con đường sự nghiệp tài chính thực tế cụ thể (ví dụ: INTJ với Nghiên cứu đầu tư).
 
-When feeling lost or uncertain about choosing an academic major or their first job.
+Lộ trình giáo dục thực tế: Lộ trình các cột mốc sự nghiệp 4 năm được cấu trúc rõ ràng, tích hợp các siêu liên kết trực tiếp đến các chương trình chứng chỉ chuyên nghiệp liên quan (như ACCA, CFA hoặc CMA).
 
-When planning a long-term study roadmap (deciding which professional certification to pursue).
+Phân tích hồ sơ toàn diện: Các hộp Accordion đóng/mở chủ động cung cấp thông tin chuyên sâu về mô tả công việc thực tế hàng ngày, thế mạnh cốt lõi nơi công sở và các thách thức phát triển nghề nghiệp.
 
-During career orientation events, industry workshops, or job fairs hosted by SAPP Academy or universities.
+## Hướng dẫn sử dụng
 
+Mở đường liên kết https://ftu-legacy-62.github.io/G01/
 
-## Main features
+Nhấn "Start" (Bắt đầu)
 
-Finance-Context MBTI Assessment: A targeted 20-question situational quiz tailored specifically to finance and accounting scenarios to evaluate core behavioral traits.
+Trả lời trung thực 20 câu hỏi
 
-Logical Career Mapping: A logic-driven matrix that accurately aligns the 16 standard MBTI personality types with specific, real-world finance career paths (e.g., INTJ to Investment Research).
+Xem kết quả
 
-Actionable Educational Roadmaps: A structured 4-year career milestone timeline integrated with direct hyperlinks to relevant professional certification tracks (such as ACCA, CFA, or CMA).
-
-Comprehensive Profile Analytics: Expandable accordion panels delivering deep-dive insights into a realistic "day-in-the-life" job description, core workplace strengths, and professional development challenges.
-
-## Step by step guide
-
-1. Open link https://ftu-legacy-62.github.io/G01/ 
-
-2. Press start
-
-3. Answer the 20 questions truthfully
-
-4. View results
-
-## Link demo nếu có
-
-- Link demo: https://ftu-legacy-62.github.io/G01/
-
+## Link demo: https://ftu-legacy-62.github.io/G01/

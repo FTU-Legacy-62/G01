@@ -605,3 +605,87 @@ ul.comic-list-numbered li {
 .bar-right {
     background-color: #ec4899;
 }
+/* --- Quiz Footer & Back Button Styles --- */
+.quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.quiz-footer .footer-text {
+    margin-top: 0; /* Override previous margin since it's now flexed */
+    text-align: right;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    border: 3px solid #1e293b;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 3px 3px 0px #1e293b;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.15s ease;
+    font-family: inherit;
+}
+
+.back-btn:hover {
+    background-color: #cbd5e1;
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px #1e293b;
+}
+
+.back-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #1e293b;
+}
+/* --- Warning Banner Styles --- */
+.warning-banner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fef08a; /* Comic Yellow */
+    border: 3px solid #1e293b;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    width: 100%;
+    box-shadow: 4px 4px 0px #1e293b;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.warning-banner .warning-icon {
+    font-size: 32px;
+    animation: comicPulse 1.5s infinite ease-in-out;
+}
+
+.warning-banner div {
+    font-size: 15px;
+    color: #1e293b;
+    line-height: 1.4;
+}
+
+.warning-banner strong {
+    font-size: 17px;
+    color: #ef4444; /* Alert Red */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+/* --- Accordion Link Formatting --- */
+.comic-link-source {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s ease;
+    border-bottom: 2px dashed #2563eb;
+}
+
+.comic-link-source:hover {
+    color: #ef4444; /* Flashes bright comic red on mouseover hover */
+    border-bottom: 2px solid #ef4444;
+}
